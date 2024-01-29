@@ -5,47 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheater App</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="weather-app.png" type="image/x-icon">
     
 </head>
 <body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter City Name" spellcheck="false">
-            <button><img src="images/search.png" alt="Search icon"></button>
-        </div>
-        
-        <div class="error">
-            <p>Invalid Input</p>
-        </div>
+        <p class="title-heading">Check Weather</p>
+        <div class="card">
 
-    <div class="weather">
-            <img src="images/mist.png" alt="Wheatertypeicon" class="weather-icon" loading="lazy">
-            <h1 class="temp">22&deg;c</h1>
-            <h2 class="city">New York</h2>
-        
-
-        <div class="details">
-            <div class="col">
-                <img src="images/humidity.png" alt="humidityicon">
-                <div>
-                    <p class="humidity">50%</p>
-                    <p>Humidity</p>
-                </div>
+            <div class="search">
+                <input type="text" placeholder="Enter City Name" spellcheck="false">
+                <button><img src="images/search.png" alt="Search icon"></button>
             </div>
-
-            <div class="col">
-                <img src="images/wind.png" alt="windicon">
-                <div>
-                    <p class="wind">10 Km\h</p>
-                    <p>Wind</p>
-                </div>
+            
+            <div class="error">
+                <p>Invalid Input</p>
             </div>
+    
+        <div class="weather">
+                <img src="images/mist.png" alt="Wheatertypeicon" class="weather-icon" loading="lazy">
 
+                <!-- Min temp -->
+                <h3 class="mintemp">22&degC</h3>
+                <h4 class="titlemintemp">Min Temp</h4>
+
+                <!-- temp                 -->
+                <h1 class="temp">22&deg;c</h1>
+                
+                <!-- Max Temp -->
+                
+                <h3 class="maxtemp">24&degC</h3>
+                <h4 class="titlemaxtemp">Max Temp</h4>
+
+                <!-- city name -->
+                <h2 class="city">New York</h2>
             
-            
+    
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="humidityicon">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <img src="images/wind.png" alt="windicon">
+                    <div>
+                        <p class="wind">10 Km\h</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+    
+                
+                
+            </div>
+            </div>
         </div>
-        </div>
-    </div>
+
+    
+    
 
     <script src="app.js"></script>
 </body>
