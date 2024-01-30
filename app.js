@@ -32,9 +32,10 @@ async function checkWeather(city) {
         document.querySelector(".wind").innerHTML = `${data.wind.speed}Km/h`;
         document.querySelector(".mintemp").innerHTML = Math.round(data.main.temp_min) + `°C`;
         document.querySelector(".maxtemp").innerHTML = Math.round(data.main.temp_max) + `°C`;
+        document.querySelector(".country_name").innerHTML = data.sys.country;
         var newTitle = city  + ` `+ Math.round(`${data.main.temp}`) + `°C` ;
         document.title = newTitle;
-    
+        console.log(data);
         if (data.weather[0].main == "Clouds") {
             weatherIcon.src = "images/clouds.png";
             body.style.backgroundImage = "url('https://images.unsplash.com/photo-1603437873662-dc1f44901825?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
