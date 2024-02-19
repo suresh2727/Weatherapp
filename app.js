@@ -30,8 +30,8 @@ async function checkWeather(city) {
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp)+  `°C`;
         document.querySelector(".humidity").innerHTML = `${data.main.humidity}%`;
         document.querySelector(".wind").innerHTML = `${data.wind.speed}Km/h`;
-        document.querySelector(".mintemp").innerHTML = Math.round(data.main.temp_min) + `°C`;
-        document.querySelector(".maxtemp").innerHTML = Math.round(data.main.temp_max) + `°C`;
+        // document.querySelector(".mintemp").innerHTML = Math.round(data.main.temp_min) + `°C`;
+        // document.querySelector(".maxtemp").innerHTML = Math.round(data.main.temp_max) + `°C`;
         document.querySelector(".country_name").innerHTML = data.sys.country;
         var newTitle = city  + ` `+ Math.round(`${data.main.temp}`) + `°C` ;
         document.title = newTitle;
