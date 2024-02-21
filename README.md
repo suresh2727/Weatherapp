@@ -1,1 +1,1 @@
-Weather App build with HTML/CSS/JAVASCRIPT 
+Weather App build with HTML/CSS/JAVASCRIPT. 
